@@ -1,26 +1,25 @@
+
+<?php
 //fibonacci series
-<?
-class fibonacci
+class Fibonacci
 {
-	public f;
-	public s;
-	public n;
-	function _construct()// constructor function
-	{echo "fibonacci series"};
-	public function first($f)
+	public $f = 1;
+	public $s;
+	public $n;
+	//function
+	public function first($s)
 	{
-		$this->f = $f;
-	}
-	public function fact($s)
-	{
+		for($i=1; $i<=10; $i++)
+		{
 		$this->s = $s;
-		$this->n = $f+$s;
+		$this->n = $this->f+$s;
 		$this->f = $s;
-		$this->s = $n;
+		$s = $this->n;
+		echo $this->n;
+		echo "<br>";
+		}
 	}
-?>
-<?
-include ("")
-$obf = new fibonacci(1);
-$obf->fact(1);
+}
+$obf = new Fibonacci();
+$obf->first(1);
 ?>

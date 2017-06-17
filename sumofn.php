@@ -1,5 +1,5 @@
+<?php
 //sum of N Number
-<?
 class sumofn
 {
 	public $n;
@@ -7,11 +7,9 @@ class sumofn
 	public function sum($n)
 	{
 		$this->n = $n;
-		$sum = ($n*($n+1))/2;
-		echo "total sum" $sum ;
+		$this->sum = ($n*($n+1))/2;
+		echo $this->sum ;
 }}
-?>
-<?
 $obs = new sumofn();
-$obs->sum(6);
+$obs->sum(21);
 ?>

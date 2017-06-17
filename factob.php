@@ -1,25 +1,20 @@
-//class trial obj.php
-<?
-class factorial
+<?php
+//factorial.php
+class Factorial
 {
-private $result = 1;
-private $number;
-
-//constructor
-function _construct($number)
+public $result = 1;
+public $number;
+function showresult($number)
 {
-$this-> number = $number;
-echo "factorial of $this->number";
+$this->number = $number;
+for($i = 2; $i <= $number; $i++)
+{
+$this -> result*=$i;
+echo $this->result;
+echo "<br>";
 }
-function final()
-{
-for($i = 2;$i <= $this->number;$i++)
-{
-$this->result *= $i;
-echo "is $this->result";
-}?>
-<?
-include("factob.php")
-$ob = new factorial(5);
-$ob->final ();
-}?>
+}
+}
+$fact = new Factorial();
+$fact->showResult(5);
+?>

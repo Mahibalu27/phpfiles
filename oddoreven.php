@@ -1,5 +1,5 @@
+<?php
 //odd or even
-<?
 class oddoreven
 {
 public $n;
@@ -11,11 +11,9 @@ if ($n%2 == 0)
 	echo "oooo it is even";
 }else if($n%2 == 1)
 {
-	echo "oooo if it is odd";
+	echo "oooo it is odd";
 }
-}
-?>
-<? include("")
+}}
 $obe = new oddoreven();
-$obe->odd(5);
+$obe->odd(4);
 ?>

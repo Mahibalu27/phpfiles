@@ -1,21 +1,18 @@
-//pascal trialngle
-<?
+<?php
 class pascal
 {
-public $i;
-public $j;
 public $n;
 //pascaltriangle
 public function pascaltriangle($n)	
 {
-$thid n = $n;
-	for($i=1;$i<=n;$i++)
+$this->n = $n;
+	for($i=1; $i<=$n; $i++)
 	{
 		for($j=1;$j<=$i;$j++){
 			echo "#";
+			
 		}
-}}?>
-<?
+echo "<br>";}}}
 $obp = new pascal();
-$ob-> pascaltriangle(5);
+$obp->pascaltriangle(5);
 ?>

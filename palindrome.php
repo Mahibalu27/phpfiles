@@ -1,33 +1,35 @@
-//palindrome sequence
-<?
+<?php
+//palindrome check
 class palindrome
 {
-	public $x;
 	public $r = 0;
+	public $x = 121;
 	public $c;
-	public function palindromecheck($x)
+	//function name
+	public function success()
 	{
-		$this->x = $x;
-		$this->c = $x; 
-		while($c != 0)
+		$this->c = $this->x;
+while($this->x != 0)
 	{
-		$this->r = $r*10;
-		$this->r = $r+$c%10;
-		$this->c = $c/10;
+		$this->r = $this->r*10 + $this->x%10;
+		$this->x = (int)$this->x/10;
 	}
-	if($x == $r)
-	{
-	echo "palindrome";
-	}
-else if($x != $r)
-{	
-	echo "ooo no";
-}}}
+if($this->r == $this->c)//comparision
+{
+		echo "yes palindrome";
+		echo $this->x ; 
+		echo "<br>";
+		echo $this->c ;
+}
+else
+{
+		echo "ooo";
+}
+}
+}
+$object = new palindrome();
+$object->success();
 ?>
-	<?
-	$obp = new palindrome(121);
-	$obp->palindromecheck();
-	?>
 		
 		
 	
